@@ -4,6 +4,7 @@ Medium link: https://medium.com/@sygong/one-stop-guide-to-creating-predictive-mo
 ## Project Overview
 Once every few days, Starbucks sends out an offer to users of the mobile app. An offer can be merely an advertisement for a drink or an actual offer such as a discount or BOGO (buy one get one free). And not all users receive the same offer. We can image that ideally, Starbucks want to send different types of offer to different customers to maximize their possibilities to complete the offer and buy more coffees! :)
 
+## Problem Statement
 <b> Overall, the aim of this project is to combine demographic, offer and also customer behavior data to build a model that can predict whether or not a specific customer will complete an offer received.</b>
 
 ## Data Sets
@@ -36,6 +37,12 @@ Here is the schema and explanation of each variable in the files:
 * person (str) - customer id
 * time (int) - time in hours since start of test. The data begins at time t=0
 * value - (dict of strings) - either an offer id or transaction amount depending on the record
+
+### Libraries used
+
+Python3
+
+pandas, numpy, seaborn, matplotlib, plotly, sklearn, yellowbrick, shap
 
 ## Steps to work on the project
 ### 1. Exploratory Data Analysis (EDA)
@@ -88,4 +95,7 @@ For this project, we successfully build a Machine Learning model that can predic
 One implementation could be personalizing the offers.
 
 For each customer, we could calculate the probability of his/her completing each type of offers via our model, and then send the most-likely-to-complete offer to the customer.
-Another topic which is also interesting to work on is to identify groups who will make purchases even if they don't receive an offer. (I might be this type of customer lol I am really a coffee lover!) From a business perspective, if a customer is going to make a 10 dollar purchase without an offer anyway, you wouldn't want to send a buy 10 dollars get 2 dollars off offer.
+
+Another topic which is also interesting to work on is to identify groups who will make purchases even if they don’t receive an offer. (I might be this type of customer lol I am really a coffee lover!) From a business perspective, if a customer is going to make a 10 dollar purchase without an offer anyway, you wouldn’t want to send a buy 10 dollars get 2 dollars off offer.
+
+This topic could be approached via our model to see for one customer, whether viewing the offer could greatly improve his/her probability to complete an offer. If viewing offer is not important to one customer, this customer is likely to be one of the groups who will make purchases even if they don’t receive an offer.
