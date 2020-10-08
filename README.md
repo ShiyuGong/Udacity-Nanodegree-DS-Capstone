@@ -1,5 +1,6 @@
 # Udacity-Nanodegree-DS-Capstone 
 # Starbucks Challenge
+Medium link: https://medium.com/@sygong/one-stop-guide-to-creating-predictive-models-udacity-nanodegree-data-scientist-capstone-starbucks-3e19619ad765
 ## Project Overview
 Once every few days, Starbucks sends out an offer to users of the mobile app. An offer can be merely an advertisement for a drink or an actual offer such as a discount or BOGO (buy one get one free). And not all users receive the same offer. We can image that ideally, Starbucks want to send different types of offer to different customers to maximize their possibilities to complete the offer and buy more coffees! :)
 
